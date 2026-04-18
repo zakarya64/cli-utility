@@ -1,0 +1,26 @@
+{
+  "name": "dbbackup-cli",
+  "version": "1.0.0",
+  "description": "CLI utility to backup and restore MySQL databases",
+  "main": "src/backup.js",
+  "bin": {
+    "dbbackup": "./bin/dbbackup.js"
+  },
+  "scripts": {
+    "start": "node bin/dbbackup.js",
+    "backup": "node bin/dbbackup.js backup",
+    "restore": "node bin/dbbackup.js restore",
+    "interactive": "node bin/dbbackup.js interactive"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "archiver": "^7.0.1",
+    "chalk": "^4.1.2",
+    "cli-table3": "^0.6.5",
+    "commander": "^11.1.0",
+    "dotenv": "^16.3.1",
+    "fs-extra": "^11.3.4",
+    "mysql2": "^3.22.1",
+    "ora": "^5.4.1"
+  }
+}
